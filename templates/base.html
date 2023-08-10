@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+     
+    {% block cdns %}{% endblock cdns %}
+        
+    {% block style %}
+        <link rel="stylesheet" href="{% static 'base.css' %}">
+    {% endblock style %}
+        
+    
+    {% block extrastyle %}{% endblock extrastyle %}
+        
+    
+    {% block title %}<title>Django allauth</title>{% endblock title %}
+        
+</head>
+<body>
+ 
+    {% block header %}
+    {% endblock header %}
+    
+    {% block message %}
+    {% bootstrap_messages %}
+        
+    {% endblock message %}
+        
+        
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    
+    {% block footer %}{% endblock footer %}
+
+    
+    {% block script %}{% endblock script %}
+
+    
+    {% block extrascript %}{% endblock extrascript %}
+  
+</body>
+</html>

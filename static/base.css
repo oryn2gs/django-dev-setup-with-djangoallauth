@@ -1,0 +1,12 @@
+/*! add your desired fonts */
+
+:root {
+  --background-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* ! base styles */
+/* ! base components styles */
